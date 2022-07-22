@@ -1,0 +1,131 @@
+@import './variables.less';
+
+.planes--container {
+    width: 100%;
+    min-width: 320px;
+    padding-bottom: 70px;
+    text-align: center;
+
+    .planes--title {
+        width: 90%;
+        min-width: 288px;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 20px;
+
+        h2 {
+            padding-top: 50px;
+            font-size: 2.4rem;
+            font-weight: bold;
+            line-height: 2.6rem;
+            color: @warmBlackColor;
+        }
+
+        p {
+            padding-top: 30px;
+            font-size: 1.4rem;
+            font-weight: 500;
+            line-height: 1.8rem;
+            color: #757575;
+        }
+    }
+
+    .planes--container__slider {
+        display: flex;
+        height: 316px;
+        overflow-x: scroll;
+        overscroll-behavior-x: contain;
+        scroll-snap-type: x proximity;
+        margin: auto 20px;
+    }
+
+    .planes--container__slider::-webkit-scrollbar {
+        background-color: @softOrangeColor;
+        height: 3px;
+    }
+
+    .planes--container__slider::-webkit-scrollbar-thumb {
+        background-color: @bitcoinColor;
+    }
+}
+
+.card--container {
+    font-family: @mainFont;
+    position: relative;
+    scroll-snap-align: center;
+    width: 70%;
+    min-width: 230px;
+    max-width: 300px;
+    height: 250px;
+    margin: 50px 20% 0;
+    padding: 0 15px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+
+    .card--recomendado {
+        font-family: @mainFont;
+        position: absolute;
+        width: 120px;
+        height: 31px;
+        background-color: @bitcoinColor;
+        border-radius: 8px;
+        color: white;
+        left: calc(50% - 60px);
+        top: -15px;
+        padding: 8px;
+        font-size: 1.2rem;
+    }
+
+    .card--info__title {
+        font-family: @mainFont;
+        padding-top: 30px;
+        font-size: 1.4rem;
+        font-weight: 500px;
+        line-height: 1.8rem;
+    }
+
+    .card--info__precio {
+        padding: 5px 0;
+        font-size: 5.2rem;
+        font-weight: bold;
+        line-height: 6.3rem;
+
+        span {
+            font-size: 1.2rem;
+            font-weight: 500;
+            position: absolute;
+            top: 40px;
+            left: calc(50% - 40px);
+            color: #363636;
+        }
+    }
+
+    .card--info__ahorro {
+        font-size: 1.2rem;
+        color: #757575;
+    }
+
+    .card--info__button {
+        width: 15rem;
+        height: 48px;
+        margin-top: 20px;
+        background: @offWhite;
+        border: 2px solid @bitcoinColor;
+        border-radius: 4px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 18px;
+        text-align: center;
+        color: @warmBlackColor;
+        font-family: @mainFont;
+
+        span {
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+            background: url('../../assets/icons/orange-right-arrow.svg');
+            vertical-align: text-bottom;
+        }
+    }
+}
