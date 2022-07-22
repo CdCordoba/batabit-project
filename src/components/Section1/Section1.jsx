@@ -28,7 +28,7 @@ export default function Section1() {
                             </tbody>
                         </table>
                     </div>
-                    <div className='currency--table__actualizado'> <p><span>Actualizado</span>: 20 Julio 12:26 </p></div>
+                    <div className='currency--table__actualizado'> <p><span><b>Actualizado</b></span>: 20 Julio 12:26 </p></div>
                 </div>
             </section>
         </section>

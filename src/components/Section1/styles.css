@@ -1,3 +1,6 @@
+.ho {
+  color: #2cbdee;
+}
 .exchange-container {
   width: 100%;
   height: auto;
@@ -93,15 +96,16 @@
   border-radius: 0 0 0 15px;
 }
 .exchange-container .tables-container .currency--table__actualizado {
+  font-family: "DM Sans", sans-serif;
   width: 190px;
   height: 30px;
   margin: 0 auto;
   margin-top: 15px;
-  padding: 8px;
+  padding: 20px;
   background-color: #FFE9D5;
   border-radius: 8px;
-  font-size: 1.6 rem;
-  line-height: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
   font-weight: 300;
   color: #201E1C;
   display: flex;
@@ -110,6 +114,7 @@
 }
 .exchange-container .tables-container .currency--table__actualizado span {
   font-weight: 700;
+  color: black;
 }
 .trending--up {
   display: inline-block;
