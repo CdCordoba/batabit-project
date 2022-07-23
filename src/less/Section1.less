@@ -71,6 +71,7 @@
             font-family: @interFont;
             margin: 5px 30px;
 
+
             .currency--table__title {
                 margin-bottom: 15px;
                 font-size: 1.8rem;
@@ -78,11 +79,16 @@
                 line-height: 1.3rem;
                 color: @bitcoinColor;
                 padding-right: 30%;
+
+                @media (min-width: 930px) {
+                    font-size: 2.5rem;
+                    margin-bottom: 20px;
+                }
             }
         }
 
         .currency--table__container {
-            width: 90%;
+            width: 100%;
             min-width: 230px;
             max-width: 300px;
             height: 250px;
@@ -94,13 +100,17 @@
                 height: 100%;
 
                 td {
-                    width: 50%;
+                    width: 55%;
                     background-color: @white;
                     font-size: 1.6rem;
                     font-weight: 500px;
                     line-height: 1.9rem;
                     color: @gray;
                     text-align: left;
+
+                    @media (min-width: 930px) {
+                        font-size: 1.9rem;
+                    }
                 }
 
                 .table__left {
@@ -113,6 +123,10 @@
                     line-height: 1.7rem;
                     color: #757575;
                     text-align: center;
+
+                    @media (min-width: 930px) {
+                        font-size: 1.7rem;
+                    }
                 }
 
                 .table--top__left {

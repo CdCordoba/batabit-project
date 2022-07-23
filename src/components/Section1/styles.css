@@ -74,8 +74,14 @@
   color: #F7931A;
   padding-right: 30%;
 }
+@media (min-width: 930px) {
+  .exchange-container .tables-container .currency--table .currency--table__title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+}
 .exchange-container .tables-container .currency--table__container {
-  width: 90%;
+  width: 100%;
   min-width: 230px;
   max-width: 300px;
   height: 250px;
@@ -86,13 +92,18 @@
   height: 100%;
 }
 .exchange-container .tables-container .currency--table__container table td {
-  width: 50%;
+  width: 55%;
   background-color: #FFFFFF;
   font-size: 1.6rem;
   font-weight: 500px;
   line-height: 1.9rem;
   color: #BABABA;
   text-align: left;
+}
+@media (min-width: 930px) {
+  .exchange-container .tables-container .currency--table__container table td {
+    font-size: 1.9rem;
+  }
 }
 .exchange-container .tables-container .currency--table__container table .table__left {
   padding-left: 10px;
@@ -103,6 +114,11 @@
   line-height: 1.7rem;
   color: #757575;
   text-align: center;
+}
+@media (min-width: 930px) {
+  .exchange-container .tables-container .currency--table__container table .table__right {
+    font-size: 1.7rem;
+  }
 }
 .exchange-container .tables-container .currency--table__container table .table--top__left {
   border-radius: 15px 0 0 0;
