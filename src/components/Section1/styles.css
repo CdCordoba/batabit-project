@@ -1,6 +1,11 @@
 .ho {
   color: #2cbdee;
 }
+@media (min-width: 450px) {
+  .flecha--right {
+    display: none;
+  }
+}
 .exchange-container {
   width: 100%;
   height: auto;
@@ -49,7 +54,7 @@
   overflow-x: scroll;
   overscroll-behavior-x: contain;
   scroll-snap-type: x proximity;
-  margin: 10px 20%;
+  margin: 10px 5%;
 }
 @media (min-width: 930px) {
   .exchange-container .tables-container {
