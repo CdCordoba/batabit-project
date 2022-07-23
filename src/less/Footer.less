@@ -24,6 +24,18 @@ footer {
         width: 50%;
     }
 
+    .right {
+        flex-direction: column;
+
+        p {
+            position: absolute;
+            margin-top: 90px;
+            color: rgb(233, 233, 233);
+            font-family: @mainFont;
+            font-size: 1.2rem;
+        }
+    }
+
     .left {
         ul {
             font-size: 1.4rem;
@@ -34,11 +46,43 @@ footer {
             li {
                 margin: 10px;
                 text-align: left;
+
             }
 
             a {
                 text-decoration: none;
                 color: white;
+
+                &:hover {
+                    color: @softOrangeColor;
+                }
+            }
+
+        }
+    }
+
+    @media (min-width: 768px) {
+        .batata-logo {
+            width: 80px;
+            height: 64px;
+            background-size: cover;
+        }
+
+        .left {
+
+            ul {
+                display: flex;
+
+                li {
+                    margin: 0 20px;
+                    font-size: 1.6rem;
+                }
+            }
+        }
+
+        .right {
+            p {
+                font-size: 1.4rem;
             }
         }
     }

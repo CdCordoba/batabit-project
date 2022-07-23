@@ -36,13 +36,35 @@
   color: #757575;
   margin-bottom: 30px;
 }
+.exchange-container .tables-container::-webkit-scrollbar {
+  background-color: #FFE9D5;
+  height: 3px;
+}
+.exchange-container .tables-container::-webkit-scrollbar-thumb {
+  background-color: #F7931A;
+}
+.exchange-container .tables-container {
+  display: flex;
+  height: max-content;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+  margin: 10px 20%;
+}
+@media (min-width: 930px) {
+  .exchange-container .tables-container {
+    justify-content: center;
+  }
+}
 .exchange-container .tables-container .currency--table {
+  scroll-snap-align: center;
   width: 70%;
   min-width: 235px;
   max-width: 500px;
   height: 360px;
   margin: 0 auto;
   font-family: 'Inter', sans-serif;
+  margin: 5px 30px;
 }
 .exchange-container .tables-container .currency--table .currency--table__title {
   margin-bottom: 15px;
@@ -50,8 +72,7 @@
   font-weight: bold;
   line-height: 1.3rem;
   color: #F7931A;
-  text-align: left;
-  padding-left: 15px;
+  padding-right: 30%;
 }
 .exchange-container .tables-container .currency--table__container {
   width: 90%;
@@ -102,7 +123,7 @@
   margin: 0 auto;
   margin-top: 15px;
   padding: 20px;
-  background-color: #FFE9D5;
+  background-color: #fcbe85;
   border-radius: 8px;
   font-size: 1.2rem;
   line-height: 1.5rem;
@@ -115,6 +136,14 @@
 .exchange-container .tables-container .currency--table__actualizado span {
   font-weight: 700;
   color: black;
+}
+@media (min-width: 930px) {
+  .exchange-container .exchange-container--title h2 {
+    font-size: 3rem;
+  }
+  .exchange-container .exchange-container--title p {
+    font-size: 1.8rem;
+  }
 }
 .trending--up {
   display: inline-block;

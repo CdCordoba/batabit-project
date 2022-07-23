@@ -30,6 +30,20 @@ export default function Section1() {
                     </div>
                     <div className='currency--table__actualizado'> <p><span><b>Actualizado</b></span>: 20 Julio 12:26 </p></div>
                 </div>
+                <div className='currency--table'>
+                    <p className='currency--table__title' style={{ color: 'rgb(65, 141, 255)' }}>Comisiones</p>
+                    <div className='currency--table__container' >
+                        <table >
+                            <tbody>
+                                <Table moneda='Bitrade' precio={'12.96'} classTop={true} />
+                                <Table moneda='Bitcrepo' precio={'13.07'} />
+                                <Table moneda='Novadax' precio={'13.15'} />
+                                <Table moneda='Cointext' precio={'14.96'} classBottom={true} />
+                            </tbody>
+                        </table>
+                    </div>
+                    <div className='currency--table__actualizado' style={{ backgroundColor: 'lightblue' }}> <p><span><b>Actualizado</b></span>: 20 Julio 12:31 </p></div>
+                </div>
             </section>
         </section>
     )

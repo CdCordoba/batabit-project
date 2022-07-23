@@ -1,3 +1,6 @@
+.ho {
+  color: #2cbdee;
+}
 .product-detail {
   min-width: 320px;
   width: 100%;
@@ -37,11 +40,19 @@
   line-height: 1.8rem;
   color: #808080;
 }
+@media (min-width: 860px) {
+  .product-detail .product-detail--title h2 {
+    font-size: 3rem;
+  }
+  .product-detail .product-detail--title p {
+    font-size: 1.8rem;
+  }
+}
 .product--card {
   width: 85%;
   min-width: 288px;
   max-width: 400px;
-  height: 150px;
+  min-height: 150px;
   margin: 15px auto;
   background-color: #282623;
   border-radius: 5px;
@@ -80,4 +91,29 @@
 }
 .product--card .check {
   background: url("../../assets/icons/check-circle.svg") center / cover no-repeat;
+}
+@media (min-width: 860px) {
+  .product--cards__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .product--cards__container .product--card {
+    min-width: 360px;
+    max-width: 600px;
+    min-height: 200px;
+  }
+  .product--cards__container .product--card span {
+    width: 30px;
+    height: 30px;
+  }
+  .product--cards__container .product--card .product--card__title {
+    font-size: 2.3rem;
+    margin: 10px 0 20px 0;
+  }
+  .product--cards__container .product--card .product--card__body {
+    font-size: 1.6rem;
+    line-height: 2.3rem;
+  }
 }

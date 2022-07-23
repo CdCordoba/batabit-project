@@ -37,6 +37,10 @@
         overscroll-behavior-x: contain;
         scroll-snap-type: x proximity;
         margin: auto 20px;
+
+        @media (min-width: 930px) {
+            justify-content: center;
+        }
     }
 
     .planes--container__slider::-webkit-scrollbar {
@@ -50,6 +54,7 @@
 }
 
 .card--container {
+
     font-family: @mainFont;
     position: relative;
     scroll-snap-align: center;
@@ -57,7 +62,7 @@
     min-width: 230px;
     max-width: 300px;
     height: 250px;
-    margin: 50px 20% 0;
+    margin: 50px 20px 0;
     padding: 0 15px;
     background-color: white;
     border-radius: 15px;
