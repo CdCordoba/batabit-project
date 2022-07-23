@@ -1,4 +1,4 @@
-import logo from "./logo.svg";
+import React from "react";
 import "./App.css";
 import Landing from "./components/Landing/Landing";
 import Section1 from "./components/Section1/Section1";
@@ -11,12 +11,10 @@ function App() {
   return (
     <div className="App">
       <Landing />
-      <main>
-        <Section1 />
-        <Section2 />
-        <Section3 />
-        <Section4 />
-      </main>
+      <Section1 />
+      <Section2 />
+      <Section3 />
+      <Section4 />
       <Footer />
     </div>
   );
